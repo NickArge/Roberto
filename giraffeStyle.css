@@ -1,0 +1,44 @@
+#giraffeContainer {
+  position: relative;
+  width: 250px; /* Set this to the width of your largest SVG to contain all layers */
+  height: 600px; /* Set this to the height of your tallest SVG */
+  display: inline-block; /* Keeps the container to its content size */
+}
+
+body {
+  background-image: url(/imagesGF/bg.jpg); /* Path to your background image */
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  min-height: 100vh; /* Minimum height of 100% of the viewport height */
+  margin: 0; /* Remove default margin */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#bodyGiraffe, #eyesOpen, #eyesClosed {
+  position: absolute;
+  top: 0; /* Adjust if your SVG needs to be positioned differently */
+  left: 0; /* Adjust if your SVG needs to be positioned differently */
+  width: 100%; /* Adjust if SVG does not scale properly */
+  height: 100%; /* Adjust if SVG does not scale properly */
+}
+
+#backButton {
+  position: absolute;
+  top: 20px; /* Adjust the position as needed */
+  left: 20px; /* Adjust the position as needed */
+  padding: 10px 20px;
+  background-color: #f0f0f0; /* Light grey background, adjust color to match your design */
+  color: #333; /* Dark text color for visibility */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px; /* Responsive font size */
+  cursor: pointer;
+  text-align: center;
+}
+
+#backButton:hover {
+  background-color: #e2e2e2; /* Slightly darker grey on hover for visual feedback */
+}

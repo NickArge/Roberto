@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+
+body {
+    font-family: 'Henny Penny', cursive; /* Harry Potter-like font */
+    background-color: #000000; /* black background */
+    color: #d3a625; /* gold color, similar to the HP logo */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+
+}
+
+.main-title {
+    margin-top: 100px; /* Reduced margin for less space */
+}
+
+.main-title h1 {
+    color: #d3a625; /* Gold color */
+    font-size: 3em;
+    text-align: center;
+    margin: 0;
+}
+
+.main-title h2 {
+    color: #ffffff; /* White color for subtitle */
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px; /* Reduced margin for less space */
+}
+
+p {
+    color: #ffffff; /* White color for readability */
+    font-size: 1.2em;
+}
+
+.button {
+    background-color: #1a472a; /* Deep green, reminiscent of Slytherin */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #4b8067; /* Lighter green when hovered */
+}
+
+.moment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-top: 10px; /* Reduced padding for closer spacing */
+}
+
+.moment.reverse {
+    flex-direction: row-reverse;
+}
+
+.moment img {
+    width: 50%;
+    height: auto;
+    padding: 10px;
+}
+
+.description {
+    width: 45%;
+    padding: 10px;
+    text-align: left;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000000; /* Black background */
+    color: #d3a625; /* Yellow text */
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added shadow */
+    animation: slideDown 0.5s ease-out forwards;
+}
+
+.back-button {
+    background-color: #d3a625; /* Yellow background */
+    border: 2px solid #d3a625; /* Yellow border */
+    color: #000000; /* Black text */
+    font-size: 1em;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #000000; /* Black background on hover */
+    color: #d3a625; /* Yellow text on hover */
+}
+
+.logo {
+    width: 120px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px; /* Added margin to ensure it stays within view */
+}
+
+.dropbtn {
+    background-color: #d3a625; /* Yellow background */
+    color: #000000; /* Black text */
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #d3a625; /* Yellow border */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.dropbtn span {
+    margin-left: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000; /* Black background */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+}
+
+.dropdown-content a {
+    color: #d3a625; /* Yellow text */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #4b8067; /* Lighter green when hovered */
+    color: #ffffff; /* White text on hover */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #000000; /* Black background on hover */
+    color: #d3a625; /* Yellow text on hover */
+}
